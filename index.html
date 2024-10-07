@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>The Big 5</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav-title-logo">
+                <img src="assets/logo.png" alt="logo">
+                <h4>THE BIG 5<br>PERSONALITY TRAITS</h4>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#jumbotron">HOME</a></li>
+                <li><a href="#whatis">WHAT IS?</a></li>
+                <li><a href="#history">HISTORY</a></li>
+                <li><a href="#function">FUNCTION</a></li>
+                <li><a href="#thetraits">THE TRAITS</a></li>
+            </ul>
+        </nav>
+        <div id="home">
+            <h1><span class="big-title">The Big Five</span><br>Personality Traits</h1>
+            <p>Explore your personality through The Big Five Traits</p>
+            <button type="button" class="button"><a href="#container-section1">Learn More</a></button>
+        </div>
+    </header>
+    <main>
+        <section id="container-section1">
+            <div class="content-section1">
+                <article id="whatis">
+                    <h1>What Is <dfn>The Big Five?</dfn></h1>
+                    <p>The Big Five trait model of personality is the most widely accepted personality theory in the scientific community. Although it is not as well understood among laypeople as systems like Myers-Briggs personality typing, it is generally believed to be the most scientifically sound way of conceptualizing the differences between people. The Big Five describes people in terms of traits on a spectrum, and as such, is a much more valid and evidence-based means of understanding personality.</p>
+                    <h3>“ It’s not about types, but about <dfn>traits</dfn>. ”</h3>
+                </article>
+                <article id="history">
+                    <h1>History</h1>
+                    <p>The development of personality trait theories has gone through various stages, beginning with Gordon Allport's 4,000 traits, Raymond Cattell's 16-factor model, and Hans Eysenck's three-factor theory. However, Cattell's model was considered too complex and Eysenck's too limited, leading to the emergence of the Big Five personality traits. This model, which identifies five core traits as the fundamental building blocks of personality, gained traction through the work of researchers like D.W. Fiske (1949) and was later expanded by Norman, Smith, Goldberg, and McCrae & Costa.</p>
+                </article>
+            </div>
+            <aside>
+                <img src="assets/gif/ocean.gif" alt="ocean">
+                <h3>An Easy Way to Remember</h3>
+                <ul class="aside-list">
+                    <li class="aside-item a">Openness</li>
+                    <li class="aside-item b">Conscientiousness</li>
+                    <li class="aside-item c">Extraversion</li>
+                    <li class="aside-item d">Agreeableness</li>
+                    <li class="aside-item a">Neuroticism</li>
+                </ul>
+            </aside>
+        </section>
+        <section id="container-section2">
+            <h1 id="function">Function</h1>
+            <ul class="function-list">
+                <li class="function-item">
+                    <img src="assets/ilustration/self-il.png" alt="self awareness">
+                    <h3>Self-awareness</h3>
+                    <p>Understanding strengths and weaknesses</p>
+                </li>
+                <li class="function-item">
+                    <img src="assets/ilustration/career-il.png" alt="career guidance">
+                    <h3>Career Guidance</h3>
+                    <p>Helps individuals choose suitable career paths</p>
+                </li>
+                <li class="function-item">
+                    <img src="assets/ilustration/recruitment-il.png" alt="recruitment">
+                    <h3>Recruitment</h3>
+                    <p>Used by employers to match candidates with job role</p>
+                </li>
+                <li class="function-item">
+                    <img src="assets/ilustration/therapy-il.png" alt="therapy">
+                    <h3>Therapy</h3>
+                    <p>Guides mental health professionals in understanding client needs</p>
+                </li>
+            </ul>
+        </section>
+        <section id="container-section3">
+            <h1 id="thetraits">The Traits</h1>
+            <p>In the Big Five model, the five dimensions of personality are:</p>
+            <div class="traits-menu">
+                <button type="button" class="button" data-slide="0">Openness</button>
+                <button type="button" class="button" data-slide="1">Conscientiousness</button>
+                <button type="button" class="button" data-slide="2">Extraversion</button>
+                <button type="button" class="button" data-slide="3">Agreeableness</button>
+                <button type="button" class="button" data-slide="4">Neuroticism</button>
+            </div>
+            <!-- 
+            TODO: Add slider & responsive
+            -->
+            <div class="container-slider">
+                <button class="arrow prev">&#10094;</button>
+                <div class="wrapper-slider">
+                    <ul class="traits-list">
+                        <li class="traits-item">
+                            <img src="assets/gif/openness-gi.gif" alt="openness" class="traits-img">
+                            <h3 class="traits-title">Openness</h3>
+                            <p class="traits-desc">Creativity and curiosity</p>
+                            <button class="traits-button button">Learn More</button>
+                        </li>
+                        <li class="traits-item">
+                            <img src="assets/gif/conscientiousness-gi.gif" alt="conscientiousness" class="traits-img">
+                            <h3 class="traits-title">Conscientiousness</h3>
+                            <p class="traits-desc">Organization and dependability</p>
+                            <button class="traits-button button">Learn More</button>
+                        </li>
+                        <li class="traits-item">
+                            <img src="assets/gif/extraversion-gi.gif" alt="extraversion" class="traits-img">
+                            <h3 class="traits-title">Extraversion</h3>
+                            <p class="traits-desc">Energy and sociability</p>
+                            <button class="traits-button button">Learn More</button>
+                        </li>
+                        <li class="traits-item">
+                            <img src="assets/gif/agreeableness-gi.gif" alt="agreeableness" class="traits-img">
+                            <h3 class="traits-title">Agreeableness</h3>
+                            <p class="traits-desc">Kindness and cooperation</p>
+                            <button class="traits-button button">Learn More</button>
+                        </li>
+                        <li class="traits-item">
+                            <img src="assets/gif/neuroticism-gi.gif" alt="neuroticism" class="traits-img">
+                            <h3 class="traits-title">Neuroticism</h3>
+                            <p class="traits-desc">Emotional stability</p>
+                            <button class="traits-button button">Learn More</button>
+                        </li>
+                    </ul>
+                </div>
+                <button class="arrow next">&#10095;</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <h4>2024 &#169; THE BIG 5 PERSONALITY TRAITS</h4>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
