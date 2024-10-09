@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     traitButtons.forEach((button, index) => {
         button.addEventListener("click", function () {
-            renderPage(index); // Navigate to the corresponding trait page
+            renderPage(index);
         });
     });
 
@@ -47,30 +47,24 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderPage(pageIndex) {
     const page = pages[pageIndex];
 
-    // Reset old content
     contentContainer.innerHTML = "";
 
-    // Create H1 element for the main title
     const h1 = document.createElement("h1");
     h1.textContent = page.title;
     contentContainer.appendChild(h1);
 
-    // Create P element for the main description
     const p = document.createElement("p");
     p.textContent = page.description;
     contentContainer.appendChild(p);
 
-    // Loop to add cards
     page.card.forEach((card) => {
     const cardSection = document.createElement("div");
     cardSection.classList.add("content-section");
 
-    // H3 for card title
     const h3 = document.createElement("h3");
     h3.textContent = card.title;
     cardSection.appendChild(h3);
 
-    // List for pros and cons
     const ul = document.createElement("ul");
     card.list.forEach((item) => {
         const li = document.createElement("li");
@@ -78,22 +72,17 @@ function renderPage(pageIndex) {
         ul.appendChild(li);
         });
         cardSection.appendChild(ul);
-
-        // Add card to the main container
         contentContainer.appendChild(cardSection);
     });
 
-    // Add image
     const img = document.createElement("img");
     img.src = page.img;
     img.alt = page.imgDescription;
     contentContainer.appendChild(img);
 
-    // Add description for the image
     const imgDesc = document.createElement("p");
     imgDesc.textContent = page.imgDescription;
     contentContainer.appendChild(imgDesc);
     }
 
-// Show the first page (index 0)
 renderPage(0);
