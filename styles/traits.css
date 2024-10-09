@@ -1,0 +1,66 @@
+#trait-container {
+    display: flex;
+    margin: 3rem 7.5rem;
+    gap: 1rem;
+    color: black;
+}
+.back-icon {
+    flex: 1;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+#trait-content {
+    flex: 15;
+    display: flex;
+    flex-flow: column;
+}
+.title-description {
+    width: 80%;
+    text-align: justify;
+}
+.title-description h2 {
+    margin: 0.5rem 0;
+}
+.card-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.card-pros, .card-cons {
+    width: 40%;
+    background-color: white;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-pros h3, .card-cons h3 {
+    text-align: center;
+    margin-top: 2rem;
+}
+.card-pros ul, .card-cons ul {
+    line-height: 3rem;
+}
+#trait-aside {
+    flex: 7;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem; 
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.image-description {
+    background-color: #F6DCAC;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+.card-pros:hover, .card-cons:hover {
+    background-color: #F6DCAC;
+    box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+footer {
+    bottom: 0;
+}
