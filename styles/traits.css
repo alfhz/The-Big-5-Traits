@@ -47,6 +47,7 @@
     display: flex;
     flex-flow: column;
     gap: 1rem; 
+    padding: 1rem;
     align-content: center;
     justify-content: center;
     text-align: center;
@@ -60,4 +61,68 @@
     background-color: #F6DCAC;
     box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* RESPONSIVE STYLE */
+
+@media screen and (max-width: 1000px) {
+    #trait-container {
+        margin: 3rem 4rem;
+    }
+    .title-description {
+        width: 90%;
+    }
+    .card-container {
+        width: 90%;
+    }
+    .card-pros, .card-cons {
+        width: 45%;
+        padding: 0;
+    }
+    #trait-aside {
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    .trait-image {
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #trait-container {
+        margin: 2rem 2rem;
+    }
+    .title-description {
+        width: 95%;
+    }
+    .card-container {
+        width: 95%;
+        flex-direction: column;
+    }
+    .card-pros, .card-cons {
+        width: 100%;
+    }
+    #trait-aside {
+        padding: 0.5rem;
+    }
+    .trait-image {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #trait-container {
+        flex-direction: column;
+        margin: 2rem 2rem;
+    }
+    .title-description, .card-container {
+        width: 100%;
+    }
+    #trait-aside {
+        margin-top: 2rem;
+        padding: 0.5rem;
+    }
+    .trait-image {
+        width: 10rem;
+    }
 }

@@ -4,14 +4,31 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevArrow = document.querySelector(".arrow.prev");
     const nextArrow = document.querySelector(".arrow.next");
     const traitButtons = document.querySelectorAll(".traits-button");
-    let currentSlide = 0;
 
+    let currentSlide = 0;
     const totalSlides = document.querySelectorAll(".traits-item").length;
-    const visibleSlides = 3;
+    let visibleSlides = 3;
+
+    function updateVisibleSLides() {
+        if (window.matchMedia("(max-width:600px)").matches) {
+            visibleSlides = 1;
+        } else if (window.matchMedia("(max-width:800px)").matches) {
+            visibleSlides = 2;
+        } else {
+            visibleSlides = 3;
+        }
+    }
 
     function updateSlider() {
         slider.style.transform = `translateX(-${(100 / visibleSlides) * currentSlide}%)`;
     }
+
+    window.addEventListener('resize', () => {
+        updateVisibleSLides();
+        updateSlider();
+    })
+
+    updateVisibleSLides();
 
     prevArrow.addEventListener("click", () => {
         if (currentSlide > 0) {
@@ -41,6 +58,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     updateSlider();
+
+    const menuIcon = document.getElementById('nav-menu-icon');
+    const menu = document.getElementById('nav-menu');
+
+    menuIcon.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
 });
 
 

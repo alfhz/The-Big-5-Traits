@@ -125,8 +125,15 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         traitContent.innerHTML = "<p>Trait not found.</p>";
     }
-    });
 
-    function goBack() {
+    const menuIcon = document.getElementById('nav-menu-icon');
+    const menu = document.getElementById('nav-menu');
+
+    menuIcon.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+});
+
+function goBack() {
     window.history.back();
 }
